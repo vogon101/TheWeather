@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Scala template
+*.class
+*.log
+
+lib-jars/toolsUI-4.6.11.jar
+data/

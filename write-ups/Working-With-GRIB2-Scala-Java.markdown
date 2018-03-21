@@ -1,7 +1,3 @@
----
-
----
-
 # Working with GRIB2 Files in Scala (and Java)
 
 I was recently showed the fantasic site [wxchats.eu](http://wxcharts.eu/) by a friend. This site displays data from various NWP models and forecasts. Playing with during the recent cold snap got me wondering where they got their data from. I found one agency, [The German Weather Service](https://www.dwd.de), which provides large amounts of its data freely on their [opendata site](http://opendata.dwd.de/). Their ICON-EU forecast covers all of Europe (and some more besides) so I decided to try and look at how I could visualise this and potentially process it using some code.

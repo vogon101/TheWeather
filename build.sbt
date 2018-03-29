@@ -13,4 +13,4 @@ libraryDependencies += "commons-io" % "commons-io" % "2.6"
 unmanagedBase := baseDirectory.value / "lib-jars"
 
 
-mainClass in (Compile, run) := Some("com.vogonjeltz.weather.Test")
+mainClass in (Compile, run) := Some("com.vogonjeltz.weather.Plotting")

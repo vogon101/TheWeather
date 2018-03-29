@@ -7,6 +7,9 @@ import java.io.File
 import javax.swing.{ImageIcon, JFrame, JLabel}
 import com.vogonjeltz.weather.Test.TEMP_PATH
 import javax.imageio.ImageIO
+import com.vogonjeltz.weather.dwd.DWD_Utils
+import com.vogonjeltz.weather.gfx.{ColourScale, ImageGenerator}
+import com.vogonjeltz.weather.lib.{GridData, VariableGridData}
 import ucar.nc2.dataset.NetcdfDataset
 
 /**
@@ -20,9 +23,27 @@ object Plotting extends App {
 
   val hour = "002"
   val path = s"$TEMP_PATH/$hour.grib2"
-  val dataset = NetcdfDataset.openDataset(path)
-  val array = dataset.findVariable("Temperature_height_above_ground").read()
-  array.reduce()
+  val dataset = new VariableGridData(NetcdfDataset.openDataset(path).findVariable("Temperature_height_above_ground"), DWD_Utils.ICONEU_Utils.iconeu_gridSpec)
+  val colourScale: ColourScale = ColourScale.CS_BLUES
+  val img = new ImageGenerator(colourScale).generateImage(dataset)
+
+  ImageIO.write(img.asInstanceOf[RenderedImage], "png", new File("out.png"))
+
+
+  /*
+
+
+      /*
+      getImageFromArray(
+        finalArray.map(_.map(
+          (T: Double) => {
+            colourScale.mapValue((T - minValue) * step, interpolate = true)
+          }
+        )),
+        size(3),
+        size(2)
+      )
+      */
 
   val size = array.getShape
   val idx = array.getIndex
@@ -42,30 +63,6 @@ object Plotting extends App {
   val minValue = finalArray.map(_.min).min
 
   val step = 1/(maxValue - minValue)
-
-  val colourScale: List[(Double, Double, Double)] = List(
-    (0x00, 0x02, 0x0C),
-    (0x00, 0x07, 0x25),
-    (0x00, 0x2D, 0x58),
-    (0x00, 0x73, 0xA3),
-    (0x2B, 0xAE, 0xC0),
-    (0x81, 0xDD, 0xB0),
-    (0xC0, 0xF7, 0xBE)
-  )
-
-
-  val img =
-      getImageFromArray(
-        finalArray.map(_.map(
-          (T: Double) => {
-            interpolateColour( (T - minValue) * step, colourScale)
-          }
-        )),
-        size(3),
-        size(2)
-      )
-
-  ImageIO.write(img.asInstanceOf[RenderedImage], "png", new File("out.png"))
 
   def interpolateColour(value: Double, colours: List[(Double, Double, Double)]): (Int, Int, Int) = {
 
@@ -109,6 +106,6 @@ object Plotting extends App {
     image
   }
 
-
+  */
 
 }

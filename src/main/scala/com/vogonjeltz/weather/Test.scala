@@ -5,7 +5,7 @@ import java.net.URI
 import java.util.Date
 
 import com.vogonjeltz.weather.dwd.DWD_Utils.ICONEU_Utils
-import com.vogonjeltz.weather.lib.GridData
+import com.vogonjeltz.weather.lib.{GridData, VariableGridData}
 import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream
 import org.apache.commons.io.IOUtils
 import ucar.nc2.NetcdfFile
@@ -51,7 +51,7 @@ object Test extends App {
     val path = s"$TEMP_PATH/$hour.grib2"
     val variable = NetcdfDataset.openDataset(path).findVariable("Temperature_height_above_ground")
 
-    val gridData = new GridData(variable, ICONEU_Utils.iconeu_gridSpec)
+    val gridData = new VariableGridData(variable, ICONEU_Utils.iconeu_gridSpec)
 
     gridData.getLocation(lat, long)
 

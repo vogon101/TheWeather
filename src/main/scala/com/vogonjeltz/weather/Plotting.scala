@@ -3,13 +3,15 @@ package com.vogonjeltz.weather
 import java.awt.Image
 import java.awt.image.{BufferedImage, RenderedImage, WritableRaster}
 import java.io.File
-
 import javax.swing.{ImageIcon, JFrame, JLabel}
+
 import com.vogonjeltz.weather.Test.TEMP_PATH
 import javax.imageio.ImageIO
+
 import com.vogonjeltz.weather.dwd.DWD_Utils
 import com.vogonjeltz.weather.gfx.{ColourScale, ImageGenerator}
-import com.vogonjeltz.weather.lib.{GridData, VariableGridData}
+import com.vogonjeltz.weather.lib.{GridData, VariableGridData, VariableGridSpec}
+import ucar.ma2.Index
 import ucar.nc2.dataset.NetcdfDataset
 
 /**
@@ -19,11 +21,19 @@ import ucar.nc2.dataset.NetcdfDataset
   */
 object Plotting extends App {
 
+  lazy val canada_gridSpec = new VariableGridSpec(
+    0,
+    0,
+    0.24,
+    0.24,
+    (idx: Index) => (lat: Int, long: Int) => idx.set(0,0,lat,long)
+  )
+
   val TEMP_PATH = "data/temp/t_2m"
 
   val hour = "002"
-  val path = s"$TEMP_PATH/$hour.grib2"
-  val dataset = new VariableGridData(NetcdfDataset.openDataset(path).findVariable("Temperature_height_above_ground"), DWD_Utils.ICONEU_Utils.iconeu_gridSpec)
+  val path = s"data/canada_test.grib2"
+  val dataset = new VariableGridData(NetcdfDataset.openDataset(path).findVariable("Temperature_height_above_ground"), canada_gridSpec)
   val colourScale: ColourScale = ColourScale.CS_BLUES
   val img = new ImageGenerator(colourScale).generateImage(dataset)
 

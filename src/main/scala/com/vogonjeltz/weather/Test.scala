@@ -1,5 +1,5 @@
 package com.vogonjeltz.weather
-
+/*
 import java.io.{File, FileInputStream, FileOutputStream}
 import java.net.URI
 import java.util.Date
@@ -10,11 +10,12 @@ import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream
 import org.apache.commons.io.IOUtils
 import ucar.nc2.NetcdfFile
 import ucar.nc2.dataset.NetcdfDataset
-
+*/
 
 
 object Test extends App {
 
+  /*
   val TEMP_PATH = "data/temp/t_2m"
 
   val T_2M_PATH = "http://opendata.dwd.de/weather/icon/eu_nest/grib/12/t_2m/"
@@ -81,6 +82,8 @@ object Test extends App {
     }
 
   }
+
+  */
 
 
 }

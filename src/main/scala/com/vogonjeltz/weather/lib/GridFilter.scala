@@ -75,3 +75,11 @@ class FlipLongFilter(spec: GridSpec) extends GridFilter(spec) {
   override def applyFilterIDX(index: (Int, Int)): (Int, Int) = (index._1, gridSpec.longSize - index._2 - 1)
 
 }
+
+class GeoLimitFilter(spec: GridSpec, latMin: Int, latMax: Int, longMin: Int, longMax:Int) extends GridFilter (spec) {
+
+  override def applyFilterIDX(index: (Int, Int)): (Int, Int) = {
+    ??? //assert(index._1 )
+  }
+
+}

@@ -1,4 +1,8 @@
 package com.vogonjeltz.weather
+
+import java.io.File
+
+import org.geotools.data.FileDataStoreFinder
 /*
 import java.io.{File, FileInputStream, FileOutputStream}
 import java.net.URI
@@ -14,6 +18,10 @@ import ucar.nc2.dataset.NetcdfDataset
 
 
 object Test extends App {
+
+  val file = new File("data/map.shp")
+  val map: Map[String, String] = Map ("url" -> file.toURI.toString)
+
 
   /*
   val TEMP_PATH = "data/temp/t_2m"

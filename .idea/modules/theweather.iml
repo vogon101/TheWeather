@@ -15,6 +15,25 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="sbt: com.vividsolutions:jts-core:1.14.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: commons-io:commons-io:2.6:jar" level="project" />
+    <orderEntry type="library" name="sbt: commons-pool:commons-pool:1.5.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: javax.media:jai_core:1.1.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: jgridshift:jgridshift:1.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: net.java.dev.jsr-275:jsr-275:1.0-beta-2:jar" level="project" />
+    <orderEntry type="library" name="sbt: net.sf.geographiclib:GeographicLib-Java:1.44:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.commons:commons-compress:1.16.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.ejml:ejml-core:0.32:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.ejml:ejml-ddense:0.32:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.geotools:gt-api:19.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.geotools:gt-data:19.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.geotools:gt-main:19.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.geotools:gt-metadata:19.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.geotools:gt-opengis:19.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.geotools:gt-referencing:19.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.geotools:gt-shapefile:19.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.jdom:jdom2:2.0.6:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.objenesis:objenesis:2.6:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.12.4:jar" level="project" />
     <orderEntry type="module-library">
       <library name="sbt: unmanaged-jars">
         <CLASSES>
@@ -25,24 +44,5 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.12.4:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.objenesis:objenesis:2.6:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.jdom:jdom2:2.0.6:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.geotools:gt-shapefile:19.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.geotools:gt-referencing:19.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.geotools:gt-opengis:19.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.geotools:gt-metadata:19.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.geotools:gt-main:19.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.geotools:gt-data:19.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.geotools:gt-api:19.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.ejml:ejml-ddense:0.32:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.ejml:ejml-core:0.32:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.apache.commons:commons-compress:1.16.1:jar" level="project" />
-    <orderEntry type="library" name="sbt: net.sf.geographiclib:GeographicLib-Java:1.44:jar" level="project" />
-    <orderEntry type="library" name="sbt: net.java.dev.jsr-275:jsr-275:1.0-beta-2:jar" level="project" />
-    <orderEntry type="library" name="sbt: jgridshift:jgridshift:1.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: javax.media:jai_core:1.1.3:jar" level="project" />
-    <orderEntry type="library" name="sbt: commons-pool:commons-pool:1.5.4:jar" level="project" />
-    <orderEntry type="library" name="sbt: commons-io:commons-io:2.6:jar" level="project" />
   </component>
 </module>

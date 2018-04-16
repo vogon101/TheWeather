@@ -29,6 +29,9 @@ object Plotting extends App {
   ImageIO.write(img.asInstanceOf[RenderedImage], "png", new File("out.png"))
 
 
+
+
+
   /*
 
 

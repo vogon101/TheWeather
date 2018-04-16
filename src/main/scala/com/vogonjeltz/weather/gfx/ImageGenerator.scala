@@ -31,7 +31,7 @@ class ImageGenerator (colourScale: ColourScale) {
         )
         val (r,g,b) = d
         var p = (0 << 24) | (r << 16) | (g << 8) | b
-        image.setRGB(x,y, p)
+        image.setRGB(x,y,p)
       }
     }
 

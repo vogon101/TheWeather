@@ -1,26 +1,123 @@
 package com.vogonjeltz.weather
 
+import java.awt.image.RenderedImage
 import java.io.File
 
-import org.geotools.data.FileDataStoreFinder
-/*
-import java.io.{File, FileInputStream, FileOutputStream}
-import java.net.URI
-import java.util.Date
-
-import com.vogonjeltz.weather.dwd.DWD_Utils.ICONEU_Utils
-import com.vogonjeltz.weather.lib.{GridData, VariableGridData}
-import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream
-import org.apache.commons.io.IOUtils
-import ucar.nc2.NetcdfFile
+import com.vividsolutions.jts.geom.MultiPolygon
+import com.vogonjeltz.weather.Plotting.img
+import com.vogonjeltz.weather.dwd.WeatherUtils
+import com.vogonjeltz.weather.gfx.{ColourScale, ImageGenerator}
+import com.vogonjeltz.weather.lib.UcarVariableGridWrapper
+import javax.imageio.ImageIO
+import org.geotools.data.{DataStoreFinder, FileDataStoreFinder}
 import ucar.nc2.dataset.NetcdfDataset
-*/
+
+import scala.collection.JavaConverters._
+import scala.collection.mutable.ArrayBuffer
+
 
 
 object Test extends App {
 
   val file = new File("data/map.shp")
   val map: Map[String, String] = Map ("url" -> file.toURI.toString)
+  val dataStore = DataStoreFinder.getDataStore(map.asJava)
+
+  val typeName = dataStore.getTypeNames.head
+  println(s"Reading $typeName")
+
+  val iterator = dataStore.getFeatureSource(typeName).getFeatures().features()
+
+  val path = s"data/canada_test.grib2"
+  val dataset = new UcarVariableGridWrapper(NetcdfDataset.openDataset(path).findVariable("Temperature_height_above_ground"), WeatherUtils.CANADA_GDPS_FILTER)//new VariableGridData(NetcdfDataset.openDataset(path).findVariable("Temperature_height_above_ground"), canada_gridSpec)
+  val colourScale: ColourScale = ColourScale.CS_STANDARD.reverse
+  val img = new ImageGenerator(colourScale).generateImage(dataset)
+
+  val polygons = ArrayBuffer[List[(Int, Int)]]()
+
+  println(s"Longsize = ${WeatherUtils.CANADA_GDPS_FILTER.gridSpec.longSize}")
+  println(s"Latsize = ${WeatherUtils.CANADA_GDPS_FILTER.gridSpec.latSize}")
+
+
+  println(img.getWidth)
+  println(img.getHeight)
+
+
+  while (iterator.hasNext) {
+    val feature = iterator.next()
+    val geom = feature.getDefaultGeometryProperty()
+    val poly = geom.getValue.asInstanceOf[MultiPolygon]
+    for (i <- Range(0, poly.getNumGeometries)) {
+      val geom = poly.getGeometryN(i)
+      val coords = geom.getCoordinates
+        .map(T => WeatherUtils.CANADA_GDPS_FILTER.convertToIDXOption(T.y, T.x))
+        .filterNot(_.isEmpty).map(_.get).toList
+      polygons.append(coords)
+    }
+
+  }
+
+  for (poly <- polygons) {
+
+    var lastPoint: (Int, Int) = null
+
+    for (i <- poly) {
+
+      val point = WeatherUtils.CANADA_GDPS_FILTER.filterIDX(i)
+
+      if (lastPoint != null) {
+
+        val (startX, startY) = (lastPoint._1.toDouble, lastPoint._2.toDouble)
+        val (endX, endY) = (point._1.toDouble, point._2.toDouble)
+
+        val STEP = if (startX > endX) -0.05 else 0.05
+        var xSTEP = STEP
+        val GRAD =
+          if (Math.abs(endX - startX)< 0.001) {
+            xSTEP = 0
+            if (endY > startY) 0.4 else -0.4
+          } else (endY - startY) / (endX - startX)
+
+        var posX = startX
+        var posY = startY
+
+        println(s"From $startX,$startY to $endX,$endY with grad $GRAD and xSTEP $xSTEP")
+
+        while (!(posX.round == endX.round && posY.round == endY.round)) {
+
+          posX += xSTEP
+          posY += GRAD * STEP
+
+          img.setRGB(posY.round.toInt, posX.round.toInt, 0)
+
+        }
+
+
+      }
+
+      img.setRGB(point._2, point._1, 0)
+
+      lastPoint = point
+
+    }
+
+
+
+  }
+
+  /*
+  for (idx <- polygons) {
+
+
+
+    println(idx)
+    val i = WeatherUtils.DWD_ICON_EU_FILTER.filterIDX(idx)
+    //println(i)
+    img.setRGB(i._2, i._1, 0)
+  }
+
+*/
+  ImageIO.write(img.asInstanceOf[RenderedImage], "png", new File("out.png"))
 
 
   /*

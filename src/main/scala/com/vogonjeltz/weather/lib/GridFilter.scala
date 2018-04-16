@@ -33,6 +33,21 @@ class GridFilter(val gridSpec: GridSpec) {
 
   }
 
+  def convertToIDXOption(lat: Double, long: Double): Option[(Int, Int)] = {
+
+    if ( long < minLong || long > maxLong) None
+    else if (lat < minLat || lat > maxLat) None
+    else {
+
+      val longIDX = ((long - minLong) / longRes).floor.toInt
+      val latIDX = ((lat - minLat) / latRes).floor.toInt
+
+      Some ((latIDX, longIDX))
+
+    }
+
+  }
+
   protected def applyFilterIDX(index: (Int, Int)): (Int, Int) = index
 
   final def filterIDX(index: (Int, Int)): (Int, Int) = {
@@ -44,6 +59,18 @@ class GridFilter(val gridSpec: GridSpec) {
     }
 
     idx
+
+  }
+
+  final def filterIDXOption(index: (Int, Int)): Option[(Int, Int)] = {
+
+    var idx = index
+
+    for (filter <- composeList) {
+      idx = filter.applyFilterIDX(idx)
+    }
+
+    Some(idx)
 
   }
 

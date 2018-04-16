@@ -5,8 +5,8 @@ import java.io.File
 
 import com.vividsolutions.jts.geom.MultiPolygon
 import com.vogonjeltz.weather.Plotting.img
-import com.vogonjeltz.weather.dwd.WeatherUtils
-import com.vogonjeltz.weather.gfx.{ColourScale, ImageGenerator}
+import com.vogonjeltz.weather.utils.WeatherUtils
+import com.vogonjeltz.weather.gfx.{ColourScale, WeatherMapGenerator}
 import com.vogonjeltz.weather.lib.UcarVariableGridWrapper
 import javax.imageio.ImageIO
 import org.geotools.data.{DataStoreFinder, FileDataStoreFinder}
@@ -30,8 +30,8 @@ object Test extends App {
 
   val path = s"data/canada_test.grib2"
   val dataset = new UcarVariableGridWrapper(NetcdfDataset.openDataset(path).findVariable("Temperature_height_above_ground"), WeatherUtils.CANADA_GDPS_FILTER)//new VariableGridData(NetcdfDataset.openDataset(path).findVariable("Temperature_height_above_ground"), canada_gridSpec)
-  val colourScale: ColourScale = ColourScale.CS_STANDARD.reverse
-  val img = new ImageGenerator(colourScale).generateImage(dataset)
+  val colourScale: ColourScale = ColourScale.CS_BLUES.reverse
+  val img = new WeatherMapGenerator(WeatherUtils.CANADA_GDPS_FILTER, colourScale).generateImage(dataset)
 
   val polygons = ArrayBuffer[List[(Int, Int)]]()
 

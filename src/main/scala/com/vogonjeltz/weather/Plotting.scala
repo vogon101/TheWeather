@@ -4,13 +4,18 @@ package com.vogonjeltz.weather
 import java.awt.image.RenderedImage
 import java.io.File
 
-import com.vogonjeltz.weather.dwd.WeatherUtils
+import com.vividsolutions.jts.geom.MultiPolygon
+import com.vogonjeltz.weather.Test.{iterator, polygons}
+import com.vogonjeltz.weather.utils.WeatherUtils
 import javax.imageio.ImageIO
-import com.vogonjeltz.weather.gfx.{ColourScale, ImageGenerator}
+import com.vogonjeltz.weather.gfx.{ColourScale, WeatherMapGenerator}
 import com.vogonjeltz.weather.lib._
-import ucar.ma2.Index
+import com.vogonjeltz.weather.map.MapData
+import org.geotools.data.DataStoreFinder
 import ucar.nc2.dataset.NetcdfDataset
 
+import scala.collection.JavaConverters._
+import scala.collection.mutable.ArrayBuffer
 /**
   * Plotting
   *
@@ -21,10 +26,13 @@ object Plotting extends App {
   val TEMP_PATH = "data/temp/t_2m"
 
   val hour = "002"
-  val path = s"data/clouds.grib2"
-  val dataset = new UcarVariableGridWrapper(NetcdfDataset.openDataset(path).findVariable("Cloud_cover_isobaric_layer"), WeatherUtils.DWD_ICON_EU_FILTER)//new VariableGridData(NetcdfDataset.openDataset(path).findVariable("Temperature_height_above_ground"), canada_gridSpec)
+  val path = s"data/temp/t_2m/004.grib2"
+  val dataset = new UcarVariableGridWrapper(NetcdfDataset.openDataset(path).findVariable("Temperature_height_above_ground"), WeatherUtils.DWD_ICON_EU_FILTER)//new VariableGridData(NetcdfDataset.openDataset(path).findVariable("Temperature_height_above_ground"), canada_gridSpec)
   val colourScale: ColourScale = ColourScale.CS_STANDARD.reverse
-  val img = new ImageGenerator(colourScale).generateImage(dataset)
+
+  val file = new File("data/map.shp")
+  val mapData = MapData.readFromShapefile(file)
+  val img = new WeatherMapGenerator(WeatherUtils.DWD_ICON_EU_FILTER, colourScale, Some(mapData)).generateImage(dataset)
 
   ImageIO.write(img.asInstanceOf[RenderedImage], "png", new File("out.png"))
 

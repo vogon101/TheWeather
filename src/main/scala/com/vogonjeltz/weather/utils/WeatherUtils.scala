@@ -1,4 +1,4 @@
-package com.vogonjeltz.weather.dwd
+package com.vogonjeltz.weather.utils
 
 import com.vogonjeltz.weather.lib.{FlipLatFilter, GridFilter, GridSpec, UcarGridFilter}
 import ucar.ma2.Index

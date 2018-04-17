@@ -26,7 +26,7 @@ object Plotting extends App {
   val TEMP_PATH = "data/temp/t_2m"
 
   val hour = "002"
-  val path = s"data/temp/t_2m/004.grib2"
+  val path = s"data/later_t.grib2"
   val dataset = new UcarVariableGridWrapper(NetcdfDataset.openDataset(path).findVariable("Temperature_height_above_ground"), WeatherUtils.DWD_ICON_EU_FILTER)//new VariableGridData(NetcdfDataset.openDataset(path).findVariable("Temperature_height_above_ground"), canada_gridSpec)
   val colourScale: ColourScale = ColourScale.CS_STANDARD.reverse
 

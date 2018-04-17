@@ -7,7 +7,7 @@ package com.vogonjeltz.weather.gfx
   */
 case class ColourScale (colours: (Double, Double, Double)*) {
 
-  def mapValue(value: Double, minVal: Double = 0, maxVal: Double = 1, interpolate: Boolean = true): (Int, Int, Int) = {
+  def mapValue(minVal:Double = 1, maxVal:Double = 1)(value: Double,interpolate: Boolean = true): (Int, Int, Int) = {
 
     val fi = ((value - minVal) / (maxVal - minVal)) * (colours.length - 1)//(if (interpolate) colours.length- 1 else colours.length)
     val index = fi.toInt

@@ -38,9 +38,11 @@ object MapData {
 
     val polygons = ArrayBuffer[List[(Double,Double)]]()
     while (iterator.hasNext) {
+
       val feature = iterator.next()
       val geom = feature.getDefaultGeometryProperty
       val poly = geom.getValue.asInstanceOf[MultiPolygon]
+
       for (i <- Range(0, poly.getNumGeometries)) {
         val geom = poly.getGeometryN(i)
         val coords = geom.getCoordinates.map(T => (T.y, T.x)).toList
@@ -48,6 +50,8 @@ object MapData {
       }
 
     }
+
+    iterator.close()
 
     new MapData(polygons.toList)
   }

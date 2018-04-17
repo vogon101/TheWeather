@@ -21,13 +21,14 @@ class WeatherMapGenerator(
 
   /**
     * Generates an image, preference of resolution: resX, resY, default
-    * @param data
-    * @param resolutionX
-    * @param resolutionY
-    * @param interpolate
+    * @param data - Data to be rendered
+    * @param resolutionX - X resolution
+    * @param resolutionY - Y resolution
+    * @param interpolate - interpolate colours
+    * @param scaleRange - Absolute range of the scale
     * @return
     */
-  def generateImage(data: UcarVariableGridWrapper, resolutionX: Option[Int] = None, resolutionY: Option[Int] = None, interpolate: Boolean = true): BufferedImage = {
+  def generateImage(data: UcarVariableGridWrapper, resolutionX: Option[Int] = None, resolutionY: Option[Int] = None, interpolate: Boolean = true, scaleRange: Option[(Double, Double)] = None): BufferedImage = {
 
     import data.gridFilter.gridSpec._
 
@@ -44,11 +45,12 @@ class WeatherMapGenerator(
       }
       else (longSize, latSize)
 
-    val maxValue = data.javaArray.map(_.max).max
-    val minValue = data.javaArray.map(_.min).min
+    val (minValue, maxValue): (Double, Double) = scaleRange.getOrElse((data.javaArray.map(_.min).min,data.javaArray.map(_.max).max))
 
     val xScale = width.toDouble / longSize
     val yScale = height.toDouble / latSize
+
+    val colourMapper = (colourScale.mapValue _)(minValue, maxValue)
 
     println(s"xScale = $xScale")
     println(s"yScale = $yScale")
@@ -61,10 +63,8 @@ class WeatherMapGenerator(
         val I_X = (x / xScale).floor.toInt
         val I_Y = (y / yScale).floor.toInt
 
-        val d = colourScale.mapValue(
+        val d = colourMapper(
           data.getIndex(I_Y,I_X),
-          minValue,
-          maxValue,
           interpolate
         )
 
@@ -101,7 +101,7 @@ class WeatherMapGenerator(
           var posX = startX
           var posY = startY
 
-          println(s"From $startX,$startY to $endX,$endY with grad $GRAD and xSTEP $xSTEP")
+          //println(s"From $startX,$startY to $endX,$endY with grad $GRAD and xSTEP $xSTEP")
 
           while (!(posX.round == endX.round && posY.round == endY.round)) {
 
@@ -120,11 +120,7 @@ class WeatherMapGenerator(
 
       }
 
-
-
     }
-
-
 
     image
 

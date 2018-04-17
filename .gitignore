@@ -4,4 +4,4 @@
 *.log
 
 lib-jars/toolsUI-4.6.11.jar
-data/
+data/temp/

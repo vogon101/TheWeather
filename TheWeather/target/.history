@@ -1,0 +1,7 @@
+project
+show unmanagedBase
+clean
+Compile
+compile
+exit
+assembly

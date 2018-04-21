@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="theweather$sources"
+		revision="0.1"
+		conf="compile-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20180421181453"/>
+	<dependencies>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="2.6" status="release" pubdate="20171015110052" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="13">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="12952" time="0" location="C:\Users\Freddie\.ivy2\cache\commons-io\commons-io\ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="commons-io" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="280834" time="0" location="C:\Users\Freddie\.ivy2\cache\commons-io\commons-io\srcs\commons-io-2.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.6/commons-io-2.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-shapefile">
+			<revision name="19.0" status="release" pubdate="20180413033203" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="30727" time="0" location="C:\Users\Freddie\.ivy2\cache\org.geotools\gt-shapefile\ivy-19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo.boundlessgeo.com/main/org/geotools/gt-shapefile/19.0/gt-shapefile-19.0.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="19.0" rev-constraint-default="19.0" rev-constraint-dynamic="19.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="gt-shapefile" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="165289" time="0" location="C:\Users\Freddie\.ivy2\cache\org.geotools\gt-shapefile\srcs\gt-shapefile-19.0-sources.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/19.0/gt-shapefile-19.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-compress">
+			<revision name="1.16.1" status="release" pubdate="20180207064529" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-compress/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="13537" time="0" location="C:\Users\Freddie\.ivy2\cache\org.apache.commons\commons-compress\ivy-1.16.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="1.16.1" rev-constraint-default="1.16.1" rev-constraint-dynamic="1.16.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="commons-compress" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="527424" time="0" location="C:\Users\Freddie\.ivy2\cache\org.apache.commons\commons-compress\srcs\commons-compress-1.16.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.objenesis" name="objenesis">
+			<revision name="2.6" status="release" pubdate="20170620162837" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://objenesis.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3493" time="0" location="C:\Users\Freddie\.ivy2\cache\org.objenesis\objenesis\ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="objenesis" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="57063" time="0" location="C:\Users\Freddie\.ivy2\cache\org.objenesis\objenesis\srcs\objenesis-2.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.4" status="release" pubdate="20171011080456" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2501" time="0" location="C:\Users\Freddie\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.4/scala-library-2.12.4.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.1" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/"/>
+				<artifacts>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="991177" time="0" location="C:\Users\Freddie\.ivy2\cache\org.scala-lang\scala-library\srcs\scala-library-2.12.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.4/scala-library-2.12.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-data">
+			<revision name="19.0" status="release" pubdate="20180413033124" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="30268" time="0" location="C:\Users\Freddie\.ivy2\cache\org.geotools\gt-data\ivy-19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo.boundlessgeo.com/main/org/geotools/gt-data/19.0/gt-data-19.0.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="19.0" rev-constraint-default="19.0" rev-constraint-dynamic="19.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="gt-data" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="72180" time="0" location="C:\Users\Freddie\.ivy2\cache\org.geotools\gt-data\srcs\gt-data-19.0-sources.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-data/19.0/gt-data-19.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-main">
+			<revision name="19.0" status="release" pubdate="20180413032235" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="31375" time="0" location="C:\Users\Freddie\.ivy2\cache\org.geotools\gt-main\ivy-19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo.boundlessgeo.com/main/org/geotools/gt-main/19.0/gt-main-19.0.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="19.0" rev-constraint-default="19.0" rev-constraint-dynamic="19.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="gt-main" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1456777" time="0" location="C:\Users\Freddie\.ivy2\cache\org.geotools\gt-main\srcs\gt-main-19.0-sources.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-main/19.0/gt-main-19.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jdom" name="jdom2">
+			<revision name="2.0.6" status="release" pubdate="20150216031823" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jdom.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="Similar to Apache License but with the acknowledgment clause removed" url="https://raw.github.com/hunterhacker/jdom/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3052" time="0" location="C:\Users\Freddie\.ivy2\cache\org.jdom\jdom2\ivy-2.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jdom/jdom2/2.0.6/jdom2-2.0.6.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="2.0.6" rev-constraint-default="2.0.6" rev-constraint-dynamic="2.0.6" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jdom2" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="860190" time="0" location="C:\Users\Freddie\.ivy2\cache\org.jdom\jdom2\srcs\jdom2-2.0.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jdom/jdom2/2.0.6/jdom2-2.0.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-api">
+			<revision name="19.0" status="release" pubdate="20180413032209" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="30761" time="0" location="C:\Users\Freddie\.ivy2\cache\org.geotools\gt-api\ivy-19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo.boundlessgeo.com/main/org/geotools/gt-api/19.0/gt-api-19.0.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="19.0" rev-constraint-default="19.0" rev-constraint-dynamic="19.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="gt-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="279522" time="0" location="C:\Users\Freddie\.ivy2\cache\org.geotools\gt-api\srcs\gt-api-19.0-sources.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-api/19.0/gt-api-19.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-referencing">
+			<revision name="19.0" status="release" pubdate="20180413032216" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="31145" time="0" location="C:\Users\Freddie\.ivy2\cache\org.geotools\gt-referencing\ivy-19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo.boundlessgeo.com/main/org/geotools/gt-referencing/19.0/gt-referencing-19.0.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="19.0" rev-constraint-default="19.0" rev-constraint-dynamic="19.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="gt-referencing" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1249157" time="0" location="C:\Users\Freddie\.ivy2\cache\org.geotools\gt-referencing\srcs\gt-referencing-19.0-sources.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-referencing/19.0/gt-referencing-19.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.geographiclib" name="GeographicLib-Java">
+			<revision name="1.44" status="release" pubdate="20150814221950" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://geographiclib.sf.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="The MIT License(MIT)" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3570" time="0" location="C:\Users\Freddie\.ivy2\cache\net.sf.geographiclib\GeographicLib-Java\ivy-1.44.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="1.44" rev-constraint-default="1.44" rev-constraint-dynamic="1.44" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="GeographicLib-Java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42734" time="0" location="C:\Users\Freddie\.ivy2\cache\net.sf.geographiclib\GeographicLib-Java\srcs\GeographicLib-Java-1.44-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-metadata">
+			<revision name="19.0" status="release" pubdate="20180413032226" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="30661" time="0" location="C:\Users\Freddie\.ivy2\cache\org.geotools\gt-metadata\ivy-19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo.boundlessgeo.com/main/org/geotools/gt-metadata/19.0/gt-metadata-19.0.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="19.0" rev-constraint-default="19.0" rev-constraint-dynamic="19.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="gt-metadata" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="669090" time="0" location="C:\Users\Freddie\.ivy2\cache\org.geotools\gt-metadata\srcs\gt-metadata-19.0-sources.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-metadata/19.0/gt-metadata-19.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.geotools" name="gt-opengis">
+			<revision name="19.0" status="release" pubdate="20180413032227" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="OGC copyright" url="http://www.opengis.org/legal/"/>
+				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
+				<metadata-artifact status="no" details="" size="30458" time="0" location="C:\Users\Freddie\.ivy2\cache\org.geotools\gt-opengis\ivy-19.0.xml" searched="false" origin-is-local="false" origin-location="https://repo.boundlessgeo.com/main/org/geotools/gt-opengis/19.0/gt-opengis-19.0.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="19.0" rev-constraint-default="19.0" rev-constraint-dynamic="19.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="gt-opengis" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1106982" time="0" location="C:\Users\Freddie\.ivy2\cache\org.geotools\gt-opengis\srcs\gt-opengis-19.0-sources.jar">
+						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-opengis/19.0/gt-opengis-19.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.java.dev.jsr-275" name="jsr-275">
+			<revision name="1.0-beta-2" status="release" pubdate="20100520094550" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="BSD License" url="http://jscience.org/doc/license.txt"/>
+				<metadata-artifact status="no" details="" size="2813" time="0" location="C:\Users\Freddie\.ivy2\cache\net.java.dev.jsr-275\jsr-275\ivy-1.0-beta-2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="1.0-beta-2" rev-constraint-default="1.0-beta-2" rev-constraint-dynamic="1.0-beta-2" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jsr-275" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="611780" time="0" location="C:\Users\Freddie\.ivy2\cache\net.java.dev.jsr-275\jsr-275\srcs\jsr-275-1.0-beta-2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-pool" name="commons-pool">
+			<revision name="1.5.4" status="release" pubdate="20091113014653" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/pool/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5108" time="0" location="C:\Users\Freddie\.ivy2\cache\commons-pool\commons-pool\ivy-1.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="1.5.4" rev-constraint-default="1.5.4" rev-constraint-dynamic="1.5.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="commons-pool" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="96194" time="0" location="C:\Users\Freddie\.ivy2\cache\commons-pool\commons-pool\srcs\commons-pool-1.5.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.vividsolutions" name="jts-core">
+			<revision name="1.14.0" status="release" pubdate="20150923223338" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.vividsolutions.com/jts" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="GNU Lesser General Public License, Version 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.txt"/>
+				<metadata-artifact status="no" details="" size="3750" time="0" location="C:\Users\Freddie\.ivy2\cache\com.vividsolutions\jts-core\ivy-1.14.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/vividsolutions/jts-core/1.14.0/jts-core-1.14.0.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="1.14.0" rev-constraint-default="1.14.0" rev-constraint-dynamic="1.14.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jts-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="965669" time="0" location="C:\Users\Freddie\.ivy2\cache\com.vividsolutions\jts-core\srcs\jts-core-1.14.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/vividsolutions/jts-core/1.14.0/jts-core-1.14.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ejml" name="ejml-ddense">
+			<revision name="0.32" status="release" pubdate="20170918155422" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ejml.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="0">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2979" time="0" location="C:\Users\Freddie\.ivy2\cache\org.ejml\ejml-ddense\ivy-0.32.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ejml/ejml-ddense/0.32/ejml-ddense-0.32.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="0.32" rev-constraint-default="0.32" rev-constraint-dynamic="0.32" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="ejml-ddense" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="293166" time="0" location="C:\Users\Freddie\.ivy2\cache\org.ejml\ejml-ddense\srcs\ejml-ddense-0.32-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ejml/ejml-ddense/0.32/ejml-ddense-0.32-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ejml" name="ejml-core">
+			<revision name="0.32" status="release" pubdate="20170918155303" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ejml.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3415" time="0" location="C:\Users\Freddie\.ivy2\cache\org.ejml\ejml-core\ivy-0.32.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ejml/ejml-core/0.32/ejml-core-0.32.pom"/>
+				<caller organisation="default" name="theweather$sources" conf="compile-internal, compile, provided, optional" rev="0.32" rev-constraint-default="0.32" rev-constraint-dynamic="0.32" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="ejml-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="164044" time="0" location="C:\Users\Freddie\.ivy2\cache\org.ejml\ejml-core\srcs\ejml-core-0.32-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ejml/ejml-core/0.32/ejml-core-0.32-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

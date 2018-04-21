@@ -1,6 +1,8 @@
 # Weather Experiments
 Experiments with weather data processing and visualisation
 
+Write-ups can be found on [my blog](https://blog.vogonjeltz.com)
+
 ## Completed
 * Parse GRIB2 files from [DWD Open Data](http://opendata.dwd.de/weather/icon/eu_nest/grib/12/)
 * Basic visualisation of weather files

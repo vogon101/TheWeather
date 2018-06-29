@@ -26,4 +26,4 @@ libraryDependencies += "org.geotools" % "gt-shapefile" % "19.0"
 unmanagedBase := baseDirectory.value / "lib-jars"
 
 
-mainClass in (Compile, run) := Some("com.vogonjeltz.weather.app.ICONGif")
+mainClass in (Compile, run) := Some("com.vogonjeltz.weather.app.NewCacheTest")

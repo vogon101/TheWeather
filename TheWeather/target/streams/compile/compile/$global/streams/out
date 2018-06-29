@@ -1,0 +1,5 @@
+[error] C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\src\main\scala\com\vogonjeltz\weather\utils\DWDUtils.scala:119:48: not enough arguments for method apply: (v1: com.vogonjeltz.weather.utils.DWDUtils.ModelRun, v2: String, v3: String)String in trait Function3.
+[error] Unspecified value parameter v3.
+[error]         val path = idx.variable.targetFormatter(idx.run, hour)
+[error]                                                ^
+[error] one error found

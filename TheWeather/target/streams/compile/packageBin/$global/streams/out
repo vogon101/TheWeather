@@ -1,0 +1,99 @@
+[info] Packaging C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\theweather_2.12-0.1.jar ...
+[debug] Input file mappings:
+[debug] 	com\vogonjeltz\weather\gfx\ColourScale$.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\gfx\ColourScale$.class
+[debug] 	com\vogonjeltz\weather\app
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\app
+[debug] 	com\vogonjeltz\weather\app\ConsoleApp$delayedInit$body.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\app\ConsoleApp$delayedInit$body.class
+[debug] 	com\vogonjeltz
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz
+[debug] 	com\vogonjeltz\weather\lib\FlipLatFilter.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\lib\FlipLatFilter.class
+[debug] 	com\vogonjeltz\weather\utils\DWDUtils$ModelRun.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\utils\DWDUtils$ModelRun.class
+[debug] 	com\vogonjeltz\weather\app\Plotting$.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\app\Plotting$.class
+[debug] 	com\vogonjeltz\weather\lib\GridSpec.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\lib\GridSpec.class
+[debug] 	com\vogonjeltz\weather
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather
+[debug] 	com\vogonjeltz\weather\lib\GridDataWrapper.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\lib\GridDataWrapper.class
+[debug] 	com\vogonjeltz\weather\app\Test.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\app\Test.class
+[debug] 	com\vogonjeltz\weather\app\NewCacheTest.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\app\NewCacheTest.class
+[debug] 	com\vogonjeltz\weather\lib\GridFilter.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\lib\GridFilter.class
+[debug] 	com\vogonjeltz\weather\app\Test$delayedInit$body.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\app\Test$delayedInit$body.class
+[debug] 	com\vogonjeltz\weather\map
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\map
+[debug] 	com\vogonjeltz\weather\app\Plotting$delayedInit$body.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\app\Plotting$delayedInit$body.class
+[debug] 	com\vogonjeltz\weather\app\NewCacheTest$delayedInit$body.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\app\NewCacheTest$delayedInit$body.class
+[debug] 	com\vogonjeltz\weather\app\ICONGif$delayedInit$body.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\app\ICONGif$delayedInit$body.class
+[debug] 	com\vogonjeltz\weather\map\MapData$.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\map\MapData$.class
+[debug] 	com\vogonjeltz\weather\lib
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\lib
+[debug] 	com\vogonjeltz\weather\utils\DWDUtils$ModelVariable$.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\utils\DWDUtils$ModelVariable$.class
+[debug] 	com\vogonjeltz\weather\gfx\WeatherMapGenerator$.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\gfx\WeatherMapGenerator$.class
+[debug] 	com\vogonjeltz\weather\utils\DWDUtils$ModelRun$.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\utils\DWDUtils$ModelRun$.class
+[debug] 	com\vogonjeltz\weather\lib\GeoLimitFilter.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\lib\GeoLimitFilter.class
+[debug] 	com
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com
+[debug] 	com\vogonjeltz\weather\lib\FlipLatLongFilter.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\lib\FlipLatLongFilter.class
+[debug] 	com\vogonjeltz\weather\utils\DWDUtils.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\utils\DWDUtils.class
+[debug] 	com\vogonjeltz\weather\utils\WeatherUtils.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\utils\WeatherUtils.class
+[debug] 	com\vogonjeltz\weather\gfx\WeatherMapGenerator.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\gfx\WeatherMapGenerator.class
+[debug] 	com\vogonjeltz\weather\app\Plotting.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\app\Plotting.class
+[debug] 	com\vogonjeltz\weather\utils\WeatherUtils$.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\utils\WeatherUtils$.class
+[debug] 	com\vogonjeltz\weather\gfx
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\gfx
+[debug] 	com\vogonjeltz\weather\utils\DWDUtils$ModelVariable.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\utils\DWDUtils$ModelVariable.class
+[debug] 	com\vogonjeltz\weather\lib\UcarVariableGridWrapper.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\lib\UcarVariableGridWrapper.class
+[debug] 	com\vogonjeltz\weather\utils\DWDUtils$RunVariableIndex.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\utils\DWDUtils$RunVariableIndex.class
+[debug] 	com\vogonjeltz\weather\lib\FlipLongFilter.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\lib\FlipLongFilter.class
+[debug] 	com\vogonjeltz\weather\map\MapData.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\map\MapData.class
+[debug] 	com\vogonjeltz\weather\app\ConsoleApp$.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\app\ConsoleApp$.class
+[debug] 	com\vogonjeltz\weather\app\ConsoleApp.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\app\ConsoleApp.class
+[debug] 	com\vogonjeltz\weather\app\ICONGif.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\app\ICONGif.class
+[debug] 	com\vogonjeltz\weather\gfx\ColourScale.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\gfx\ColourScale.class
+[debug] 	com\vogonjeltz\weather\lib\UcarGridFilter.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\lib\UcarGridFilter.class
+[debug] 	com\vogonjeltz\weather\utils\DWDUtils$RunVariableIndex$.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\utils\DWDUtils$RunVariableIndex$.class
+[debug] 	com\vogonjeltz\weather\app\Test$.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\app\Test$.class
+[debug] 	com\vogonjeltz\weather\utils
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\utils
+[debug] 	com\vogonjeltz\weather\utils\DWDUtils$.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\utils\DWDUtils$.class
+[debug] 	com\vogonjeltz\weather\app\ICONGif$.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\app\ICONGif$.class
+[debug] 	com\vogonjeltz\weather\app\NewCacheTest$.class
+[debug] 	  C:\Users\Freddie\Google Drive\2. Programming\IdeaProjects\TheWeather\TheWeather\target\scala-2.12\classes\com\vogonjeltz\weather\app\NewCacheTest$.class
+[info] Done packaging.

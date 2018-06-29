@@ -12,6 +12,12 @@ GET     /message                    controllers.AsyncController.message
 
 GET     /weather/hello              controllers.WeatherController.hello
 GET     /weather/forecasts          controllers.WeatherController.availableForecasts
+GET     /weather/status             controllers.WeatherController.status
+
+GET     /weather/admin/check        controllers.WeatherController.check
+GET     /weather/admin/readFile     controllers.WeatherController.readStatus
+
+GET     /weather/image/$hour<[0-9]+>              controllers.WeatherController.image(hour: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

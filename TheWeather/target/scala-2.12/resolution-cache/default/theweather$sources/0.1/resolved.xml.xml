@@ -4,7 +4,7 @@
 		module="theweather$sources"
 		revision="0.1"
 		status="integration"
-		publication="20180421181453"
+		publication="20180629230947"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
